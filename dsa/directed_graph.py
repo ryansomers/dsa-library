@@ -3,7 +3,7 @@ maximum flow.
 
 Complexity (V vertices, E edges):
     topological_sort (Kahn) O(V + E) plus O(V log V) for the sorted ready queue;
-    strongly_connected_components (Tarjan) O(V + E);
+    strongly_connected_components (Tarjan) O(V + E) plus sorting successors;
     max_flow (Edmonds-Karp) O(V * E^2); space O(V + E).
 """
 
